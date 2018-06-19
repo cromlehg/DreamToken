@@ -1,5 +1,8 @@
 import assertRevert from '../helpers/assertRevert';
 import expectThrow from '../helpers/expectThrow';
+import {increaseTimeTo, duration} from '../helpers/increaseTime';
+import latestTime from '../helpers/latestTime';
+import EVMRevert from '../helpers/EVMRevert';
 
 export default function (Token, accounts) {
   let token;
@@ -90,5 +93,13 @@ export default function (Token, accounts) {
     const balance = await token.balanceOf(accounts[4]);
     assert.equal(balance, 100);
   });
+
+  it('should lock minting for 1 year after finishMinting', async function () {
+    await token.mint(accounts[2], 100, {from: accounts[0]}).should.be.fulfilled;
+    await token.finishMinting({from: accounts[0]});
+    await token.mint(accounts[2], 100, {from: accounts[0]}).should.be.rejectedWith(EVMRevert);
+    await increaseTimeTo(latestTime() + duration.years(1) + duration.seconds(10));
+    await token.mint(accounts[2], 100, {from: accounts[0]}).should.be.fulfilled;
+  });  
 
 }
