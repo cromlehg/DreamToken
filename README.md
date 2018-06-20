@@ -79,7 +79,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 #### PreITO
 * _Minimal insvested limit_     : 0.1 ETH
 * _Base price_                  : 1 ETH = 12000 Tokens
-* _Hardcap_                     : 1 ETH
+* _Hardcap_                     : 25 000 ETH
 * _Period_                      : 54 days
 * _Start_                       : 9 Jul 2018 00:00:00 GMT
 * _Wallet_                      : 
