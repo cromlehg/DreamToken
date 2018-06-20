@@ -33,6 +33,15 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setPercentRate(this.PercentRate);
   });
 
+  it('should use wallet for investments', async function () {
+    const investment = ether(1);
+    const pre = web3.eth.getBalance(this.wallet);
+    const owner = await crowdsale.owner();
+    await crowdsale.sendTransaction({value: investment, from: wallets[1]});
+    const post = web3.eth.getBalance(this.wallet);
+    post.minus(pre).should.bignumber.equal(investment);
+  });
+
   it('should mintTokensByETHExternal by owner', async function () {
     const owner = await crowdsale.owner();
     await crowdsale.mintTokensByETHExternal(wallets[4], ether(1), {from: owner}).should.be.fulfilled;

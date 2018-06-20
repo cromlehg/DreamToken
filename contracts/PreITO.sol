@@ -25,6 +25,7 @@ contract PreITO is NextSaleAgentFeature, CommonSale {
 
   function fallback() internal minInvestLimited(msg.value) returns(uint) {
     require(now >= start && now < endSaleDate());
+    wallet.transfer(msg.value);
     token.lockAddressAfterITO(msg.sender);
     uint tokens = mintTokensByETH(msg.sender, msg.value);
     return tokens;
