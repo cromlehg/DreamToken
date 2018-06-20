@@ -79,7 +79,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 #### PreITO
 * _Minimal insvested limit_     : 0.1 ETH
 * _Base price_                  : 1 ETH = 12000 Tokens
-* _Hardcap_                     : 25000 ETH
+* _Hardcap_                     : 1 ETH
 * _Period_                      : 54 days
 * _Start_                       : 9 Jul 2018 00:00:00 GMT
 * _Wallet_                      : 
@@ -101,3 +101,81 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 4. 16 days without bonus 
 
 
+## Ropsten network configuration #1
+
+### Links
+1. _Token_ - https://ropsten.etherscan.io/address/0x8825f224c045462c942226641362ae61b43d88b9
+2. _PreITO_ - https://ropsten.etherscan.io/address/0xc13ae603e9ba3554b3cd66cde6aa65377204d3ac
+3. _ITO_ - https://ropsten.etherscan.io/address/0xc47e58a5fe51f64007ecd8c036395f4775685838
+
+
+### Crowdsale stages
+
+#### PreITO
+
+* _Minimal insvested limit_     : 0.1 ETH
+* _Base price_                  : 1 ETH = 12000 Tokens
+* _Hardcap_                     : 1 ETH
+* _Period_                      : 54 days
+* _Start_                       : 20 Jun 2018 00:00:00 GMT
+* _Wallet_                      : 0x8fd94be56237ea9d854b23b78615775121dd1e82
+
+##### Purchasers
+
+* 1 ETH =>  12000 tokens, gas = 123460
+https://ropsten.etherscan.io/tx/0xffc3c24dd051c0c1829f68391f8bf64516a31d27c5687c1f9e9f0dadf850954b
+
+* 1 ETH => rejected txn, hardcap is reached, gas = 30800
+https://ropsten.etherscan.io/tx/0x8943db09f88b3eeb2fa9aa1034bb673e26119a8b30e81ff65a2c79a83cda3d53
+
+##### Service operations
+
+* finish, gas = 30263
+https://ropsten.etherscan.io/tx/0x7a287d3d055a7b6479702323161730b27aae04bb177fa67f3d75f9e8aee62814
+
+#### ITO
+
+* _Minimal insvested limit_     : 0.1 ETH
+* _Base price_                  : 1 ETH = 5500 Tokens
+* _Hardcap_                     : 100 000 ETH
+* _Start_                       : 20 Jun 2018 00:00:00 GMT
+* _Wallet_                      : 0x8fd94be56237ea9d854b23b78615775121dd1e82
+
+
+_Milestones_
+
+1. 21 days, bonus +30%
+2. 15 days, bonus +25%
+3. 16 days, bonus +20% 
+4. 15 days, bonus +15% 
+4. 15 days, bonus +10% 
+4. 15 days, bonus +5% 
+4. 16 days without bonus  
+
+##### Purchasers
+
+* 0.01 ETH => rejected txn, less then mininal investment limit, gas = 21297
+https://ropsten.etherscan.io/tx/0x3dbbc3da77ed514492e79c8e9b6961afc2358cb405a3a9a533030783910b258d
+
+* 0.1 ETH => 780 tokens (30% bonus), gas = 133535
+https://ropsten.etherscan.io/tx/0x02cbb0a03e66771e073b82cc000bcb9518e6b072042a1d91ade0a5f3b614c1d0
+
+* 0.1 ETH => 750 tokens (25% bonus), gas = 63975
+https://ropsten.etherscan.io/tx/0x142838379f83dc50c6966e5b66d5838f4e1b50a6abcfd30cb15bae5612466fed
+
+* transfer 50 tokens => rejected txn, gas = 25226
+https://ropsten.etherscan.io/tx/0x089e87e9a0b4c8d169e32d3bb962bcf254146609ed317bcffca1e83ff377a1fe
+
+* transfer 50 tokens (account is unlocked now), gas = 54189
+https://ropsten.etherscan.io/tx/0x6a173adf09726e8b782923df2f47c1a21884fe9c05e680dcec2bbe87d7b1b428
+
+##### Service operations
+
+* setStart, gas = 27888
+https://ropsten.etherscan.io/tx/0xd7ec1744b07efcceec24ef63e92a0146ec008b7cd1fe4c1ba517e9fe4a0a6f1e
+
+* unclockAddressDuringITO, gas = 44496
+https://ropsten.etherscan.io/tx/0xd95a812032e1aeea5b88bebe4aff4081d52166e2c98adbfbf615de987d0e6574
+
+* finish, gas = 51389
+https://ropsten.etherscan.io/tx/0x516780544c47f12cd809e33e88bd4d89872f554adb036d706e3f193b06fedc30
