@@ -58,11 +58,11 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Team tokens wallet_        : 
-* _Advisors tokens wallet_    : 
-* _Reserv tokens wallet_      :
-* _Bounty tokens wallet_      : 
-* _Contracts manager_         :
+* _Team tokens wallet_        : 0x56c991dbe9B4F558F8B8Df3303Ae55Dd1E7C7274
+* _Advisors tokens wallet_    : 0xf5C6A71B38f8369eDBdbB15885119F857Fa2cc8f
+* _Reserv tokens wallet_      : 0x9Aa66A8d9bf04Eba1788b8FB375b7964e1C16BE9
+* _Bounty tokens wallet_      : 0xCe1b5C13Bc1492218bEE349307F10c7973384041
+* _Contracts manager_         : 0xaaE84d793CFCEcA10E1C5e62400BF743989BC12C
 
 ### Links
 1. _Token_ - 
@@ -82,14 +82,14 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Hardcap_                     : 25 000 ETH
 * _Period_                      : 54 days
 * _Start_                       : 9 Jul 2018 00:00:00 GMT
-* _Wallet_                      : 
+* _Wallet_                      : 0x30Ba66F9C85D8a7564c9D19f2845b015b36f086a
 
 #### ITO
 * _Minimal insvested limit_     : 0.1 ETH
 * _Base price_                  : 1 ETH = 6000 Tokens
 * _Hardcap_                     : 100 000 ETH
 * _Start_                       : 10 Sep 2018 00:00:00 GMT
-* _Wallet_                      : 
+* _Wallet_                      : 0x09205aD4daAE9090427e81D6b0B3B00169427abb
  
 ##### Milestones
 1. 21 days, bonus +30%
