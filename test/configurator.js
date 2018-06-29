@@ -21,7 +21,7 @@ contract('Configurator integration test', function (accounts) {
   let preito;
   let ito;
 
-  const manager = '0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770';
+  const manager = '0xaaE84d793CFCEcA10E1C5e62400BF743989BC12C';
 
   before(async function () {
     // Advance to the next block to correctly read time in the solidity "now" function interpreted by testrpc
@@ -83,9 +83,9 @@ contract('Configurator integration test', function (accounts) {
 
   it ('preITO and ITO should have wallets as described in README', async function () {
     const preitoWallet = await preito.wallet();
-    preitoWallet.should.bignumber.equal('0xa86780383E35De330918D8e4195D671140A60A74');
+    preitoWallet.should.bignumber.equal('0x30Ba66F9C85D8a7564c9D19f2845b015b36f086a');
     const itoWallet = await ito.wallet();
-    itoWallet.should.bignumber.equal('0x98882D176234AEb736bbBDB173a8D24794A3b085');
+    itoWallet.should.bignumber.equal('0x09205aD4daAE9090427e81D6b0B3B00169427abb');
   });
 
 });
